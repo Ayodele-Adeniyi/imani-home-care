@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Booking {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  firstName String
+  lastName  String
+  email     String
+  phone     String?
+  service   String?
+  message   String?
+
+  date      String?
+  time      String?
+
+  type      String   @default("contact")
+  status    String   @default("pending")
+  notes     String?
+}

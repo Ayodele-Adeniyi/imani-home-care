@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Logo-matched colour palette */
+  --color-brand-blue:   #29ABE2;  /* sky blue — figures & "Imani Home" */
+  --color-brand-purple: #5C35A0;  /* purple — roof */
+  --color-brand-orange: #E84518;  /* orange — hands & "Care Service" */
+  --color-brand-green:  #1B7A3E;  /* dark green — medical cross */
+
+  --color-primary:      #1a4a7a;  /* deep blue — dark sections, text */
+  --color-primary-lt:   #1e5fa0;  /* slightly lighter for hover */
+  --color-accent:       #E84518;  /* orange — CTA buttons */
+  --color-accent-lt:    #ff5a2e;  /* lighter orange hover */
+  --color-green:        #1B7A3E;  /* logo green — checkmarks, icons */
+  --color-green-lt:     #e6f4ec;  /* very light green — card backgrounds */
+  --color-sky:          #29ABE2;  /* sky blue — highlights */
+  --color-sky-lt:       #e0f4fc;  /* light sky — subtle backgrounds */
+  --color-cream:        #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1a202c;
+  line-height: 1.75;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings — inherit colour from context */
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Body paragraphs — inherit from context */
+p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: inherit;
+}
+
+/* White cards inside dark sections reset to dark text */
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5 {
+  color: #1a4a7a;
+}
+.bg-white p {
+  color: #2d3748;
+}
+
+/* Minimum readable text sizes */
+.text-xs { font-size: 0.8125rem !important; }
+.text-sm { font-size: 0.9375rem !important; line-height: 1.65; }
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1B7A3E;
+  display: block;
+  margin-bottom: 0.5rem;
 }

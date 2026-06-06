@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Service Card Image Picker</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f5f5f5; padding: 2rem; }
+    h1 { font-size: 1.4rem; margin-bottom: .25rem; }
+    p { color: #666; margin-bottom: 2rem; font-size: .9rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    .card img { width: 100%; height: 200px; object-fit: cover; display: block; background: #e0e0e0; }
+    .info { padding: .75rem 1rem; }
+    .label { font-weight: 700; font-size: .85rem; color: #1a4a7a; }
+    .slot { font-size: .75rem; color: #888; margin-top: .2rem; }
+  </style>
+</head>
+<body>
+  <h1>Service Card Images</h1>
+  <p>These are the current images used in the 6 service cards. Tell me which ones to replace.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80" />
+      <div class="info"><div class="label">Personal Care</div><div class="slot">Card 1</div></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" />
+      <div class="info"><div class="label">Companionship</div><div class="slot">Card 2</div></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&q=80" />
+      <div class="info"><div class="label">Dementia & Memory Care</div><div class="slot">Card 3</div></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" />
+      <div class="info"><div class="label">24-Hour & Live-In Care</div><div class="slot">Card 4</div></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80" />
+      <div class="info"><div class="label">Stroke & Rehab Care</div><div class="slot">Card 5</div></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&q=80" />
+      <div class="info"><div class="label">Meal Prep & Errands</div><div class="slot">Card 6</div></div>
+    </div>
+  </div>
+</body>
+</html>
