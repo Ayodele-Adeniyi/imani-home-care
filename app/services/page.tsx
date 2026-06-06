@@ -85,7 +85,7 @@ export default function ServicesPage() {
       {/* IMAGE BREAK */}
       <section className="relative h-64 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&q=80"
           alt="Professional caregiver with senior client"
           fill
           className="object-cover"

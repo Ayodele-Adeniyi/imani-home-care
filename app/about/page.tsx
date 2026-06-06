@@ -45,7 +45,7 @@ export default function AboutPage() {
           <AnimateIn direction="left">
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-[4/3] relative">
               <Image
-                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80"
                 alt="Caregiver with elderly client at home"
                 fill
                 className="object-cover"
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <AnimateIn direction="right">
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-[4/3] relative">
               <Image
-                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80"
                 alt="Elderly woman smiling with caregiver"
                 fill
                 className="object-cover"
