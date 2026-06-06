@@ -6,19 +6,19 @@ import AnimateIn from "@/components/AnimateIn";
 import { Heart, Clock, Users, Star, ShieldCheck, Phone, ChevronRight, CheckCircle2, Sparkles } from "lucide-react";
 
 const services = [
-  { img: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80", title: "Personal Care", desc: "Dignified help with bathing, dressing, and daily hygiene — always respectful, always compassionate." },
+  { img: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80", title: "Personal Care", desc: "Dignified help with bathing, dressing, and daily hygiene - always respectful, always compassionate." },
   { img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80", title: "Companionship", desc: "Meaningful company, conversation, and activities to keep your loved one engaged and joyful." },
-  { img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80", title: "Dementia & Memory Care", desc: "Specialist cognitive support — memory games, reminiscence therapy, and calm, structured routines." },
-  { img: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80", title: "24-Hour & Live-In Care", desc: "Round-the-clock support at home — a warmer, more affordable alternative to a nursing facility." },
-  { img: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=600&q=80", title: "Stroke & Rehab Care", desc: "Expert recovery support — mobility, speech, and emotional rehabilitation coordinated with your medical team." },
+  { img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80", title: "Dementia & Memory Care", desc: "Specialist cognitive support - memory games, reminiscence therapy, and calm, structured routines." },
+  { img: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80", title: "24-Hour & Live-In Care", desc: "Round-the-clock support at home - a warmer, more affordable alternative to a nursing facility." },
+  { img: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=600&q=80", title: "Stroke & Rehab Care", desc: "Expert recovery support - mobility, speech, and emotional rehabilitation coordinated with your medical team." },
   { img: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=600&q=80", title: "Meal Prep & Errands", desc: "Nutritious home-cooked meals and reliable transport to appointments, shopping, and social events." },
 ];
 
 const whyUs = [
   { icon: <ShieldCheck size={22} />, title: "Trained & Background-Checked", desc: "Every caregiver is professionally trained, fully vetted, and continuously developed." },
-  { icon: <Clock size={22} />, title: "Available 24/7", desc: "Care needs don't keep office hours — we're here around the clock, every day of the year." },
+  { icon: <Clock size={22} />, title: "Available 24/7", desc: "Care needs don't keep office hours - we're here around the clock, every day of the year." },
   { icon: <Users size={22} />, title: "Culturally Sensitive", desc: "Diverse, community-rooted care that always feels personal, familiar, and affirming." },
-  { icon: <Heart size={22} />, title: "Personalised Care Plans", desc: "Every plan is built from scratch — tailored precisely to your loved one's needs and goals." },
+  { icon: <Heart size={22} />, title: "Personalised Care Plans", desc: "Every plan is built from scratch - tailored precisely to your loved one's needs and goals." },
 ];
 
 const testimonials = [
@@ -45,13 +45,13 @@ export default function HomePage() {
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
               className="text-white/90 text-xl leading-relaxed mb-8 max-w-md font-normal">
-              Professional in-home care that gives seniors the dignity, comfort, and independence they deserve — right where they feel most at home.
+              Professional in-home care that gives seniors the dignity, comfort, and independence they deserve - right where they feel most at home.
             </motion.p>
 
             {/* Checkmarks */}
             <motion.ul initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.25 }}
               className="space-y-2 mb-8">
-              {["No obligation — free consultation", "Personalised care plan from day one", "Available 24 hours, 7 days a week"].map((item) => (
+              {["No obligation - free consultation", "Personalised care plan from day one", "Available 24 hours, 7 days a week"].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm">
                   <CheckCircle2 size={16} className="text-[#7dd3fc] shrink-0" /> {item}
                 </li>
@@ -118,7 +118,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ABOUT STRIP — white background */}
+      {/* ABOUT STRIP - white background */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <AnimateIn direction="left">
@@ -130,12 +130,12 @@ export default function HomePage() {
           <AnimateIn direction="right">
             <span className="section-label">Who We Are</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a4a7a] mb-4">Compassionate care built on trust &amp; dignity</h2>
-            <p className="text-[#2d3748] mb-6 leading-relaxed">For over a decade, Imani Home Care Service has been helping families across Winston-Salem find peace of mind. We believe every senior deserves to live with dignity and independence — at home, not in a facility.</p>
+            <p className="text-[#2d3748] mb-6 leading-relaxed">For over a decade, Imani Home Care Service has been helping families across Winston-Salem find peace of mind. We believe every senior deserves to live with dignity and independence - at home, not in a facility.</p>
             <ul className="space-y-3 mb-7">
               {[
                 "Over 10 years serving Forsyth & Guilford County",
                 "Caregivers trained in dementia, stroke, and rehabilitation",
-                "Culturally sensitive — we celebrate every background",
+                "Culturally sensitive - we celebrate every background",
                 "Flexible plans from a few hours to full-time live-in care",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[#2d3748]">
@@ -151,13 +151,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES — light sage background */}
+      {/* SERVICES - light sage background */}
       <section className="py-20 bg-[#e6f4ec]">
         <div className="max-w-6xl mx-auto px-6">
           <AnimateIn className="text-center mb-12">
             <span className="section-label">What We Offer</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a4a7a] mb-3">Comprehensive Care Services</h2>
-            <p className="text-[#2d3748] max-w-lg mx-auto">From daily personal care to specialist dementia support — every service built around your loved one.</p>
+            <p className="text-[#2d3748] max-w-lg mx-auto">From daily personal care to specialist dementia support - every service built around your loved one.</p>
           </AnimateIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s, i) => (
@@ -186,13 +186,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHY US — navy */}
+      {/* WHY US - navy */}
       <section className="py-20 bg-[#1a4a7a]">
         <div className="max-w-6xl mx-auto px-6">
           <AnimateIn className="text-center mb-12">
             <span className="section-label" style={{ color: "#7dd3fc" }}>Why Families Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Care you can truly rely on</h2>
-            <p className="text-white/85 max-w-lg mx-auto">We go beyond standard home care — delivering an experience built on professionalism, heart, and consistency.</p>
+            <p className="text-white/85 max-w-lg mx-auto">We go beyond standard home care - delivering an experience built on professionalism, heart, and consistency.</p>
           </AnimateIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {whyUs.map((w, i) => (
@@ -215,12 +215,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[#1a4a7a]/65" />
         <div className="absolute inset-0 flex items-center justify-center text-white text-center px-6">
           <p className="text-2xl md:text-3xl font-bold max-w-2xl leading-snug text-white">
-            "Our goal is simple — to make every senior feel safe, valued, and truly cared for."
+            "Our goal is simple - to make every senior feel safe, valued, and truly cared for."
           </p>
         </div>
       </section>
 
-      {/* TESTIMONIALS — white */}
+      {/* TESTIMONIALS - white */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <AnimateIn className="text-center mb-12">

@@ -4,15 +4,15 @@ import Image from "next/image";
 import { ChevronRight, Heart, ShieldCheck, Star, Users, Clock, Globe, ClipboardList, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "About Us — Imani Home Care Service",
-  description: "Learn about Imani Home Care Service — our mission, values, and the compassionate team behind our senior care services in Winston-Salem, NC.",
+  title: "About Us - Imani Home Care Service",
+  description: "Learn about Imani Home Care Service - our mission, values, and the compassionate team behind our senior care services in Winston-Salem, NC.",
 };
 
 const values = [
-  { icon: <Heart size={24} className="text-[#1B7A3E]" />, title: "Compassion", desc: "We treat every client as we would our own family — with warmth, patience, and genuine kindness in every single interaction." },
-  { icon: <ShieldCheck size={24} className="text-[#1B7A3E]" />, title: "Integrity", desc: "We are transparent, honest, and accountable in everything we do — building trust with families one day at a time." },
-  { icon: <Users size={24} className="text-[#1B7A3E]" />, title: "Respect", desc: "We honour each person's individuality, independence, and choices — ensuring care always feels empowering, never diminishing." },
-  { icon: <Star size={24} className="text-[#1B7A3E]" />, title: "Excellence", desc: "We hold ourselves to the highest standards — continuously training our team and refining our approach to deliver the very best." },
+  { icon: <Heart size={24} className="text-[#1B7A3E]" />, title: "Compassion", desc: "We treat every client as we would our own family - with warmth, patience, and genuine kindness in every single interaction." },
+  { icon: <ShieldCheck size={24} className="text-[#1B7A3E]" />, title: "Integrity", desc: "We are transparent, honest, and accountable in everything we do - building trust with families one day at a time." },
+  { icon: <Users size={24} className="text-[#1B7A3E]" />, title: "Respect", desc: "We honour each person's individuality, independence, and choices - ensuring care always feels empowering, never diminishing." },
+  { icon: <Star size={24} className="text-[#1B7A3E]" />, title: "Excellence", desc: "We hold ourselves to the highest standards - continuously training our team and refining our approach to deliver the very best." },
 ];
 
 export default function AboutPage() {
@@ -35,7 +35,7 @@ export default function AboutPage() {
             <span className="mx-2">›</span>About Us
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Imani Home Care</h1>
-          <p className="text-white/80 text-lg">A decade of compassionate, community-driven care — getting to know the people and values behind our service.</p>
+          <p className="text-white/80 text-lg">A decade of compassionate, community-driven care - getting to know the people and values behind our service.</p>
         </div>
       </section>
 
@@ -56,10 +56,10 @@ export default function AboutPage() {
           <AnimateIn direction="right">
             <span className="section-label">Our Mission</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a4a7a] mb-4">Dedicated to Dignity, Comfort &amp; Independence</h2>
-            <p className="text-[#4a5568] mb-4">Our mission is simple: to deliver compassionate and reliable home care services that enhance seniors' quality of life — every single day.</p>
-            <p className="text-[#4a5568] mb-4">We believe that every older person deserves to live with dignity in the place they call home. That belief drives everything we do — from how we recruit our caregivers to how we design each individual care plan.</p>
+            <p className="text-[#4a5568] mb-4">Our mission is simple: to deliver compassionate and reliable home care services that enhance seniors' quality of life - every single day.</p>
+            <p className="text-[#4a5568] mb-4">We believe that every older person deserves to live with dignity in the place they call home. That belief drives everything we do - from how we recruit our caregivers to how we design each individual care plan.</p>
             <ul className="space-y-3 mb-7">
-              {["Over 10 years serving Forsyth & Guilford County", "Trained in dementia, stroke & rehabilitation care", "Culturally sensitive — celebrating every background", "Flexible plans from a few hours to full-time live-in"].map((item) => (
+              {["Over 10 years serving Forsyth & Guilford County", "Trained in dementia, stroke & rehabilitation care", "Culturally sensitive - celebrating every background", "Flexible plans from a few hours to full-time live-in"].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[#2d3748]">
                   <CheckCircle2 size={18} className="text-[#1B7A3E] shrink-0 mt-0.5" /><span>{item}</span>
                 </li>
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <AnimateIn direction="left">
             <span className="section-label">Our Vision</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a4a7a] mb-4">Becoming the Most Trusted Name in Senior Home Care</h2>
-            <p className="text-[#4a5568] text-lg leading-relaxed">We aspire to become the most trusted provider of personalised in-home elderly care for senior citizens — starting here in North Carolina and growing nationwide. Our goal is not just to provide care, but to set the standard for what compassionate, community-based senior care looks like.</p>
+            <p className="text-[#4a5568] text-lg leading-relaxed">We aspire to become the most trusted provider of personalised in-home elderly care for senior citizens - starting here in North Carolina and growing nationwide. Our goal is not just to provide care, but to set the standard for what compassionate, community-based senior care looks like.</p>
           </AnimateIn>
           <AnimateIn direction="right">
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-[4/3] relative">
@@ -127,7 +127,7 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { icon: <ShieldCheck size={24} />, title: "Trained Professionals", desc: "Every caregiver is vetted, trained, and supported by our management team." },
-              { icon: <Clock size={24} />, title: "24/7 Availability", desc: "Care needs don't follow a schedule — we're reachable every day of the year." },
+              { icon: <Clock size={24} />, title: "24/7 Availability", desc: "Care needs don't follow a schedule - we're reachable every day of the year." },
               { icon: <Globe size={24} />, title: "Culturally Sensitive", desc: "We celebrate and respect diverse backgrounds, ensuring care feels personal." },
               { icon: <ClipboardList size={24} />, title: "Personalised Plans", desc: "No two clients are the same. Every plan is tailored from scratch." },
             ].map((w, i) => (

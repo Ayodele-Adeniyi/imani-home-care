@@ -8,7 +8,7 @@ const services = [
   "Personal Care", "Companionship Care", "Dementia & Memory Care", "Stroke Care",
   "Meal Preparation", "Medication Reminders", "24-Hour / Live-In Care",
   "Non-Medical Transportation", "Light Housekeeping", "Respite Care",
-  "Rehabilitation Support", "Not Sure — Need Guidance",
+  "Rehabilitation Support", "Not Sure - Need Guidance",
 ];
 
 const times = ["8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"];
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
               <div className="mt-6 pt-6 border-t border-white/15 space-y-3">
                 <p className="text-xs font-bold text-white/90 uppercase tracking-wide">Why families choose us</p>
-                {["Free, no-obligation consultation", "Care starts as quickly as 24 hours", "Personalised plan — nothing generic"].map((item) => (
+                {["Free, no-obligation consultation", "Care starts as quickly as 24 hours", "Personalised plan - nothing generic"].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-white/90 text-sm">
                     <CheckCircle2 size={14} className="text-[#7dd3fc] shrink-0" />{item}
                   </div>

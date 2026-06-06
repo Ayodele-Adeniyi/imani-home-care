@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Phone, ChevronRight, UserCheck, Users, Sparkles, Activity, UtensilsCrossed, Pill, Clock, Car, Home, RefreshCw, Dumbbell, Building2 } from "lucide-react";
 
 export const metadata = {
-  title: "Our Services — Imani Home Care Service",
-  description: "Explore the full range of in-home care services — personal care, dementia support, 24-hour care, meal prep, and more in Winston-Salem, NC.",
+  title: "Our Services - Imani Home Care Service",
+  description: "Explore the full range of in-home care services - personal care, dementia support, 24-hour care, meal prep, and more in Winston-Salem, NC.",
 };
 
 const services = [
@@ -14,13 +14,13 @@ const services = [
   { icon: <Sparkles size={22} />, title: "Dementia & Memory Care", desc: "Specialist care programmes designed by cognitive therapy experts. Includes memory games, puzzles, reminiscence therapy, and structured routines that help clients with Alzheimer's feel safe and stimulated." },
   { icon: <Activity size={22} />, title: "Stroke Care", desc: "Expert support for stroke survivors addressing physical, cognitive, and emotional rehabilitation. Caregivers trained in stroke-specific techniques including mobility assistance and speech support." },
   { icon: <UtensilsCrossed size={22} />, title: "Meal Preparation", desc: "Personalised meal plans developed with nutritional needs and food preferences in mind, using high-quality locally sourced ingredients. Available daily, weekly, or on an occasional basis." },
-  { icon: <Pill size={22} />, title: "Medication Reminders", desc: "Gentle, consistent reminders to help clients take the right medication at the right time — reducing the risk of missed doses and supporting overall health management safely." },
-  { icon: <Clock size={22} />, title: "24-Hour & Live-In Care", desc: "Continuous, around-the-clock support for seniors who need a higher level of care. A compassionate, cost-effective alternative to nursing home placement — at home, where it matters most." },
-  { icon: <Car size={22} />, title: "Non-Medical Transportation", desc: "Safe, reliable transport to medical appointments, social events, grocery shopping, errands, and more — helping seniors stay active, connected, and independent in their community." },
-  { icon: <Home size={22} />, title: "Light Housekeeping", desc: "Support maintaining a clean, safe, and comfortable home environment — including laundry, tidying, vacuuming, and dishes. A clean space supports both physical safety and mental wellbeing." },
-  { icon: <RefreshCw size={22} />, title: "Respite Care", desc: "Temporary relief for family caregivers who need a break. We step in for a few hours, days, or longer — ensuring consistent, quality care while you recharge." },
+  { icon: <Pill size={22} />, title: "Medication Reminders", desc: "Gentle, consistent reminders to help clients take the right medication at the right time - reducing the risk of missed doses and supporting overall health management safely." },
+  { icon: <Clock size={22} />, title: "24-Hour & Live-In Care", desc: "Continuous, around-the-clock support for seniors who need a higher level of care. A compassionate, cost-effective alternative to nursing home placement - at home, where it matters most." },
+  { icon: <Car size={22} />, title: "Non-Medical Transportation", desc: "Safe, reliable transport to medical appointments, social events, grocery shopping, errands, and more - helping seniors stay active, connected, and independent in their community." },
+  { icon: <Home size={22} />, title: "Light Housekeeping", desc: "Support maintaining a clean, safe, and comfortable home environment - including laundry, tidying, vacuuming, and dishes. A clean space supports both physical safety and mental wellbeing." },
+  { icon: <RefreshCw size={22} />, title: "Respite Care", desc: "Temporary relief for family caregivers who need a break. We step in for a few hours, days, or longer - ensuring consistent, quality care while you recharge." },
   { icon: <Dumbbell size={22} />, title: "Rehabilitation Support", desc: "Skilled support for clients recovering from surgery, illness, or injury. Our team works alongside therapists to assist with physical, occupational, and speech therapy goals at home." },
-  { icon: <Building2 size={22} />, title: "Nursing Home Alternative", desc: "For families weighing residential care, in-home care with Imani offers personalised 24/7 support at a fraction of the cost — with the added benefit of staying in familiar surroundings." },
+  { icon: <Building2 size={22} />, title: "Nursing Home Alternative", desc: "For families weighing residential care, in-home care with Imani offers personalised 24/7 support at a fraction of the cost - with the added benefit of staying in familiar surroundings." },
 ];
 
 const steps = [
@@ -59,7 +59,7 @@ export default function ServicesPage() {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <span className="section-label">How We Work</span>
           <h2 className="text-2xl md:text-3xl font-bold text-[#1a4a7a] mb-3">Care Tailored to Your Loved One</h2>
-          <p className="text-[#4a5568]">Every client begins with a thorough assessment. We build a custom care plan that can flex and grow as needs change — whether that's a few hours of weekly support or around-the-clock live-in care.</p>
+          <p className="text-[#4a5568]">Every client begins with a thorough assessment. We build a custom care plan that can flex and grow as needs change - whether that's a few hours of weekly support or around-the-clock live-in care.</p>
         </div>
       </section>
 
@@ -93,7 +93,7 @@ export default function ServicesPage() {
         />
         <div className="absolute inset-0 bg-[#1a4a7a]/55" />
         <div className="absolute inset-0 flex items-center justify-center text-white text-center px-6">
-          <p className="text-xl md:text-2xl font-semibold max-w-2xl text-white">"Every care plan starts with listening — because no two people, and no two needs, are ever the same."</p>
+          <p className="text-xl md:text-2xl font-semibold max-w-2xl text-white">"Every care plan starts with listening - because no two people, and no two needs, are ever the same."</p>
         </div>
       </section>
 
@@ -125,7 +125,7 @@ export default function ServicesPage() {
         <div className="max-w-2xl mx-auto px-6">
           <AnimateIn>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Not Sure Which Service You Need?</h2>
-            <p className="text-white/85 mb-8">Our team will help you figure out the right level of support. Get in touch for a free, friendly conversation — no pressure, no commitment.</p>
+            <p className="text-white/85 mb-8">Our team will help you figure out the right level of support. Get in touch for a free, friendly conversation - no pressure, no commitment.</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact" className="bg-white text-[#1a4a7a] font-bold px-8 py-4 rounded-full hover:bg-white/90 transition-colors flex items-center gap-2">
                 Talk to Our Team <ChevronRight size={16} />
