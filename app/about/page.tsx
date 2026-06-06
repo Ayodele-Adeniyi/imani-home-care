@@ -122,7 +122,7 @@ export default function AboutPage() {
           <AnimateIn className="text-center mb-12">
             <span className="section-label" style={{ color: "#7dd3fc" }}>Why Families Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">What Sets Imani Apart</h2>
-            <p className="text-white/65 max-w-lg mx-auto">From our first call to ongoing daily care, we make the experience as seamless and reassuring as possible.</p>
+            <p style={{color:'rgba(255,255,255,0.9)'}} className="max-w-lg mx-auto">From our first call to ongoing daily care, we make the experience as seamless and reassuring as possible.</p>
           </AnimateIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
@@ -132,10 +132,10 @@ export default function AboutPage() {
               { icon: <ClipboardList size={24} />, title: "Personalised Plans", desc: "No two clients are the same. Every plan is tailored from scratch." },
             ].map((w, i) => (
               <AnimateIn key={w.title} delay={i * 0.1}>
-                <div className="bg-white/[0.08] border border-white/[0.12] rounded-2xl p-6 hover:bg-white/[0.14] transition-colors text-center">
-                  <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-[#7dd3fc] mx-auto mb-4">{w.icon}</div>
-                  <h3 className="font-bold text-white mb-2">{w.title}</h3>
-                  <p className="text-sm text-white/60">{w.desc}</p>
+                <div className="bg-white rounded-2xl p-6 shadow-md text-center">
+                  <div className="w-14 h-14 rounded-2xl bg-[#e6f4ec] flex items-center justify-center text-[#1B7A3E] mx-auto mb-4">{w.icon}</div>
+                  <h3 className="font-bold mb-2" style={{color:'#1a4a7a'}}>{w.title}</h3>
+                  <p className="text-sm" style={{color:'#2d3748'}}>{w.desc}</p>
                 </div>
               </AnimateIn>
             ))}
