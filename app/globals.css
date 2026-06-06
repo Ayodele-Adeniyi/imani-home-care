@@ -30,19 +30,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings — inherit colour from context */
+/* Headings — default dark, overridden by explicit classes */
 h1, h2, h3, h4, h5 {
   line-height: 1.2;
   letter-spacing: -0.02em;
   font-weight: 700;
-  color: inherit;
 }
 
-/* Body paragraphs — inherit from context */
+/* Body paragraphs — default dark */
 p {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: inherit;
+}
+
+/* Any element with text-white class forces ALL children to white */
+.text-white, [style*="color: white"], [style*="color:#fff"], [style*="color: #fff"] {
+  color: #ffffff !important;
+}
+
+/* Tailwind white opacity utilities — keep them bright */
+[class*="text-white/"] {
+  color: rgba(255,255,255,0.92) !important;
 }
 
 /* White cards inside dark sections reset to dark text */
