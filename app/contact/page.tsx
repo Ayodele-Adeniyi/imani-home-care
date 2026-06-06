@@ -269,12 +269,16 @@ export default function ContactPage() {
       {/* MAP */}
       <section className="pb-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="rounded-3xl overflow-hidden bg-[#e6f4ec] h-64 flex flex-col items-center justify-center gap-4 shadow-sm">
-            <p className="text-[#2d3748] text-base font-semibold">615 St. George Square Court #354, Winston Salem, NC 27103</p>
-            <a href="https://maps.google.com/?q=615+St+George+Square+Court+354+Winston+Salem+NC+27103" target="_blank" rel="noopener noreferrer"
-              className="bg-[#1a4a7a] hover:bg-[#1e5fa0] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors flex items-center gap-2">
-              <MapPin size={14} /> Open in Google Maps
-            </a>
+          <div className="rounded-3xl overflow-hidden shadow-sm h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.909825811105!2d-80.33611262437896!3d36.071303472463825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853b0ed94a4a9e1%3A0x8dd6413a7fd33871!2s615%20St%20George%20Sq%20Ct%2C%20Winston-Salem%2C%20NC%2027103!5e0!3m2!1sen!2sus!4v1780785841909!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
