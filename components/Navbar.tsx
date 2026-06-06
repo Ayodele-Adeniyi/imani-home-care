@@ -31,7 +31,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-[#1a4a7a] text-white py-2 px-6 hidden md:block">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <p className="text-xs text-white/85">Serving Forsyth & Guilford County, NC — Care available 24/7</p>
+          <p className="text-xs" style={{color:'#ffffff'}}>Serving Forsyth &amp; Guilford County, NC — Care available 24/7</p>
           <a href="tel:+13369183198" className="flex items-center gap-2 text-sm font-bold hover:text-[#29ABE2] transition-colors">
             <Phone size={14} /> (336) 918-3198
           </a>
