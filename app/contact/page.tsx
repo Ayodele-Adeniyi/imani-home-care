@@ -72,33 +72,33 @@ export default function ContactPage() {
           {/* LEFT info card */}
           <AnimateIn direction="left" className="lg:col-span-2">
             <div className="bg-[#1a4a7a] text-white rounded-3xl p-8 h-full">
-              <h3 className="text-xl font-bold mb-2">Contact Information</h3>
-              <p className="text-white text-base mb-8">We're here to answer questions and guide you through your options.</p>
+              <h3 className="text-xl font-bold mb-2" style={{color:'#ffffff'}}>Contact Information</h3>
+              <p className="text-base mb-8" style={{color:'#ffffff'}}>We're here to answer questions and guide you through your options.</p>
 
               {[
                 { icon: <Phone size={18} />, label: "Phone", value: "(336) 918-3198", href: "tel:+13369183198", sub: "Available 24/7 for urgent enquiries" },
                 { icon: <Mail size={18} />, label: "Email", value: "info@imanihomecares.com", href: "mailto:info@imanihomecares.com", sub: "We respond within 1 business day" },
                 { icon: <MapPin size={18} />, label: "Address", value: "615 St. George Square Ct #354, Winston Salem, NC 27103" },
-                { icon: <Clock size={18} />, label: "Office Hours", value: "Mon – Fri: 8:00 am – 6:00 pm", sub: "Care available 24/7" },
+                { icon: <Clock size={18} />, label: "Office Hours", value: "Mon - Fri: 8:00 am - 6:00 pm", sub: "Care available 24/7" },
               ].map((item) => (
                 <div key={item.label} className="flex gap-4 mb-6">
-                  <div className="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center shrink-0">{item.icon}</div>
+                  <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center shrink-0" style={{color:'#ffffff'}}>{item.icon}</div>
                   <div>
-                    <div className="text-xs font-bold text-white/90 uppercase tracking-wide mb-0.5">{item.label}</div>
+                    <div className="text-xs font-bold uppercase tracking-wide mb-0.5" style={{color:'#ffffff'}}>{item.label}</div>
                     {item.href ? (
-                      <a href={item.href} className="text-base text-white hover:text-[#7dd3fc] transition-colors break-all">{item.value}</a>
+                      <a href={item.href} className="text-base hover:text-[#7dd3fc] transition-colors break-all" style={{color:'#ffffff'}}>{item.value}</a>
                     ) : (
-                      <p className="text-base text-white">{item.value}</p>
+                      <p className="text-base" style={{color:'#ffffff'}}>{item.value}</p>
                     )}
-                    {"sub" in item && item.sub && <p className="text-xs text-white/90 mt-0.5">{item.sub}</p>}
+                    {"sub" in item && item.sub && <p className="text-xs mt-0.5" style={{color:'rgba(255,255,255,0.85)'}}>{item.sub}</p>}
                   </div>
                 </div>
               ))}
 
-              <div className="mt-6 pt-6 border-t border-white/15 space-y-3">
-                <p className="text-xs font-bold text-white/90 uppercase tracking-wide">Why families choose us</p>
+              <div className="mt-6 pt-6 border-t border-white/20 space-y-3">
+                <p className="text-xs font-bold uppercase tracking-wide" style={{color:'#ffffff'}}>Why families choose us</p>
                 {["Free, no-obligation consultation", "Care starts as quickly as 24 hours", "Personalised plan - nothing generic"].map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-white/90 text-sm">
+                  <div key={item} className="flex items-center gap-2 text-sm" style={{color:'#ffffff'}}>
                     <CheckCircle2 size={14} className="text-[#7dd3fc] shrink-0" />{item}
                   </div>
                 ))}
